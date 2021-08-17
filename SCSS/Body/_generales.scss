@@ -1,0 +1,33 @@
+/*resetear los estilos de HTML*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*Pequeñas*/
+@media screen and (max-width: 425px)
+{ 
+    .section nav{
+    position: relative;
+    }
+
+}
+
+/*Medianas*/
+@media screen and (min-width: 426px) and (max-width: 991px)
+{    
+}
+
+/*Grandes*/
+@media screen and (min-width: 992px)
+{
+    
+}
+
+body{
+    min-width: 712px;
+    margin: 0px 15px;
+}

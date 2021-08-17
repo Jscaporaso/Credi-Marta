@@ -1,0 +1,31 @@
+/*Seccion 2 y 4*/
+
+
+.contenedor{
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 40px;
+    max-width: $ancho;
+    p{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+.requisitos-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.requisitos{
+    display: flex;
+    align-items: center;
+    width: $ancho;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/*Fin seccion 2 y 4*/
