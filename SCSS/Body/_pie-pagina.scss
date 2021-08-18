@@ -53,28 +53,23 @@ margin: 12px;
 }
 
 .facebook{
-grid-column: 1;
-grid-row: 1;
+    @include grilla(1,1)
+
 }
 
 .instagram{
-grid-column: 3;
-grid-row: 1;
+    @include grilla(3,1)
 }
 
 .linkedin{
-grid-column: 2;
-grid-row: 2;
-}
+    @include grilla(2,2)}
 
 .youtube{
-grid-column: 1;
-grid-row: 3;
+    @include grilla(1,3)
+
 }
 
 .twitter{
-grid-column: 3;
-grid-row: 3;
-}
+    @include grilla(3,3)}
 
 /*fin pie de pagina*/

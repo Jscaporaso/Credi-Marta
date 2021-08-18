@@ -1,3 +1,8 @@
 @mixin redes($propiedades){
     transform: $propiedades;
 }
+
+@mixin grilla($columna, $linea){
+    grid-column: $columna;
+    grid-row: $linea;
+}

@@ -1,5 +1,6 @@
 @import "listas";
 @import "operadores";
+@import "mixins";
 
 /* INICIO HEADER*/
 header{
@@ -17,12 +18,12 @@ header{
 }
 
 header nav:hover .tel{
-    transform: translateX(-200px) rotate(-360deg);
+    @include redes(translateX(-200px) rotate(-360deg));
 
 }
 
 header nav:hover .logo{
-    transform: translateX(200px) rotate(360deg);
+    @include redes(translateX(200px) rotate(360deg));
 }
 
 
