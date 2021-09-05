@@ -1,0 +1,20 @@
+.preg-frec {
+    background-color: nth($colores, 2);    
+
+    p{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration-line: underline;
+    margin: 20px;
+    }
+}
+
+.accordion-collapse, .accordion, .accordion-header, .accordion-item, .accordion-body{
+    border-color: nth($colores, 7);
+    border: 100px!important;
+}
+
+.accordion-button{
+    background-color: nth($colores, 2);
+}

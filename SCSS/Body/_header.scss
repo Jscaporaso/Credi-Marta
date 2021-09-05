@@ -3,95 +3,76 @@
 @import "mixins";
 
 /* INICIO HEADER*/
+
 header{
     background-color: nth($colores, 2);
     width: $ancho;
-    height: 250px;
-    color: nth($colores, 1);
-    max-height: 300px;
-    display: inline;
-    nav{
-        background-color: nth($colores, 2);
-    }
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-collapse{
+    background-color: nth($colores, 2);
+    width: 150px;
+    margin-left: 20px;
+}
+
+.dropdown-item, .dropdown-menu{
+    background-color: nth($colores, 2);
     
-
 }
 
-header nav:hover .tel{
+.nav-link{
+    display: flex;
+    justify-content: center;
+    color: nth($colores, 1)!important;
+}
+
+.logo{
+    display: flex;
+    padding: 0% 0% 0% 2%;
+    transition: all 1s linear;
+    height: 120px;
+    width: 120px;
+
+}
+.tel
+{
+    padding: 0% 0% 0% 0%;
+    width: 200px;
+    transition: all 1s linear;
+    height: 100px;
+    display: flex;
+}
+
+
+.navbar{
+    font-size: 12px!important;
+    text-decoration: none;
+    width: 900px;
+    background-color: nth($colores, 2)!important;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: flex-end!important;
+    height: 150px;
+}
+
+.navbar-brand{
+    height: 150px;
+    padding: 0px;
+}
+
+header:hover .tel{
     @include redes(translateX(-200px) rotate(-360deg));
-
 }
 
-header nav:hover .logo{
+header:hover .logo{
     @include redes(translateX(200px) rotate(360deg));
 }
 
 
-.menu-container{
-    display: flex;
-    justify-content: center;
-  background-color: #bdeaf4;
-}
-
-.logo{
-
-    padding: 0% 0% 0% 2%;
-    transition: all 1s linear;
-    height: 200px;
-    width: 200px;
-    margin-top: 15px;
-}
-
-.tel
-{
-    padding: 0% 5% 0% 0%;
-    width: 300px;
-    float: right;    
-    transition: all 1s linear;
-    height: 100px;
-    margin-top: 15px;
-}
-.menu{
-    list-style: none;
-    font-size: 0;
-    z-index: +1;
-    width: 1500px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    li{
-        display: inline-block;
-       width: $ancho;
-       position: relative;
-       font-size: 20px;
-       color: black;
-       text-decoration: none;
-   }
-   ul{
-    position: absolute;
-    display: none;
-    left: 50px;
-    li{    
-        display: block;
-        width: 120px;
-        height: 30px;
-        padding-left: 5px;
-        
-    }
-}
-
-}
-
-.menu li:hover ul{
-    display: block;
-    background-color: #bdeaf4;
-}
-
-.menu li a:hover{
-    background-color: lightslategrey;
-}
 
 /*fin Header*/

@@ -1,19 +1,24 @@
 @import "mixins";
+@import "operadores";
+@import "listas";
 
 /*Pie de pagina*/
 
 
 .contacto{
-    color: nth($colores, 4);
+    color: nth($colores, 7);
     text-align: center;
     font-size: 30px;
+    text-decoration: none;
     li{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         
-        
+        a{
+            text-decoration: none;
+        }
         }
 }
 
@@ -23,13 +28,22 @@ footer p
     text-align: center;
     font-size: 30px;
     text-decoration-line: underline;
-    margin: 30px;
+    margin: 20px;
+}
+
+.segui{
+    background-color: nth($colores, 2);
+}
+.contact{
+    background-color: nth($colores, 6);
 }
 
 footer nav p{
 position: fixed;
 bottom: 10px;
 right: 40px;
+text-decoration: none;
+
 
 }
 
@@ -39,18 +53,23 @@ justify-content: center;
 list-style: none;
 text-align: center;
 transition: all 2s;
-margin: 30px 0px 30px 0px;
-grid-template-columns: auto auto auto;
-grid-template-rows: auto auto auto;
+margin: 5px 0px 5px 0px;
+grid-template-columns: auto auto auto auto auto;
+grid-template-rows: auto;
 }
 
 .scale:hover {
     @include redes(scale(1.2))
 }
 
-.scale{
+.scale, .contacto img {
 margin: 12px;
-
+width: $iconos;
+height: $iconos;
+    img{
+        width: $iconos;
+        height: $iconos;
+    }
 }
 
 .facebook{
@@ -59,18 +78,25 @@ margin: 12px;
 }
 
 .instagram{
-    @include grilla(3,1)
+    @include grilla(2,1)
 }
 
 .linkedin{
-    @include grilla(2,2)}
+    @include grilla(3,1)}
 
 .youtube{
-    @include grilla(1,3)
+    @include grilla(4,1)
 
 }
 
 .twitter{
-    @include grilla(3,3)}
+    @include grilla(5,1)}
+
+.u-userLauncherColor:not([disabled]) {
+        background-color: #a4163f !important;
+        color: #FFFFFF !important;
+        fill: #FFFFFF !important;
+      }
+  
 
 /*fin pie de pagina*/

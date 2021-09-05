@@ -1,8 +1,9 @@
+@import "listas";
 
 /*Seccion 3*/
 .slogan
     {   
-        background-color:#bdeaf4;
+        background-color: nth($colores, 7);
         color: white;
         font-family: 'Roboto', sans-serif;
         text-align: center;
