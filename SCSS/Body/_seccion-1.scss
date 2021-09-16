@@ -1,62 +1,24 @@
 /*Seccion 1*/
 
 @import "mapas";
+@import "listas";
 
 
-
-.solcred{
+.seccion1{
     width: $ancho;
-    height: 100%;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    z-index: -1;
+    background: linear-gradient(to bottom, black, #212529);
+    color: white;
+    .btn-primary{
+        background-color: black;
+        border-color: white;
+        color: nth($colores, 5);
+        
+    }
+    label{
+     color: lightgray;
+     
+    }
 }
-
-
-section nav{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-
-    border: 5px solid white;
-    margin: 2%;
-    background-color: #87ceeb;
-    text-align: center;
-    text-decoration: none;
-}
-
-.formulario{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: $ancho - 10%;
-    height: 90%;
-
-}   
-
-
-.minimo{
-    background-color: map-get($minimo, bg-color-minimo);
-}
-
-.bajo{
-    background-color: map-get($bajo, bg-color-bajo);
-}
-
-.medio{
-    background-color: map-get($medio, bg-color-medio);
-}
-
-.alto{
-    background-color: map-get($alto, bg-color-alto);
-}
-
-.maximo{
-    background-color: map-get($maximo, bg-color-maximo);
-}
-
 
 /*fin seccion 1*/
 

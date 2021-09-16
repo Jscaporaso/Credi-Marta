@@ -1,20 +1,18 @@
-.preg-frec {
-    background-color: nth($colores, 2);    
+.preg-frec{
+    background: linear-gradient(to bottom, #6c757d, white)!important;
 
     p{
     color: black;
     text-align: center;
     font-size: 30px;
     text-decoration-line: underline;
-    margin: 20px;
+    margin: 0px 0px 0px 20px;
     }
 }
 
-.accordion-collapse, .accordion, .accordion-header, .accordion-item, .accordion-body{
-    border-color: nth($colores, 7);
+.accordion-collapse, .accordion, .accordion-header, .accordion-item, .accordion-body, .accordion-button{
+    color: black;    
     border: 100px!important;
-}
-
-.accordion-button{
-    background-color: nth($colores, 2);
+    border-color: black;
+    background: linear-gradient(to bottom, #ced4da, #dee2e6);
 }

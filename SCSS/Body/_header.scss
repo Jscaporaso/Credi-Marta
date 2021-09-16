@@ -5,28 +5,41 @@
 /* INICIO HEADER*/
 
 header{
-    background-color: nth($colores, 2);
+    background-color: nth($colores, 1);
     width: $ancho;
     height: 160px;
     display: flex;
     justify-content: space-evenly;
+    
+    .navbar-nav{
+        background-color: black;
+        z-index: +5;
+
+    }
+    
+    .nav-item:hover, .dropdown-item:hover{
+        background-color: grey;
+
+    }
 }
 
 .navbar-collapse{
-    background-color: nth($colores, 2);
+    background-color: nth($colores, 1);
     width: 150px;
     margin-left: 20px;
+
 }
 
 .dropdown-item, .dropdown-menu{
-    background-color: nth($colores, 2);
-    
+    background-color: nth($colores, 1);
+    color: white;
 }
 
 .nav-link{
     display: flex;
     justify-content: center;
-    color: nth($colores, 1)!important;
+    color: nth($colores, 6)!important;
+    
 }
 
 .logo{
@@ -51,7 +64,7 @@ header{
     font-size: 12px!important;
     text-decoration: none;
     width: 900px;
-    background-color: nth($colores, 2)!important;
+    background-color: nth($colores, 1)!important;
 }
 
 .container-fluid{
@@ -66,13 +79,15 @@ header{
 }
 
 header:hover .tel{
-    @include redes(translateX(-200px) rotate(-360deg));
+    @include redes(translateX(-150px) rotate(-360deg));
 }
 
 header:hover .logo{
-    @include redes(translateX(200px) rotate(360deg));
+    @include redes(translateX(150px) rotate(360deg));
 }
 
-
+.navbar-toggler{
+    background-color: white;
+}
 
 /*fin Header*/

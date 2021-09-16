@@ -1,10 +1,11 @@
 @import "listas";
 
 /*Seccion 3*/
-.slogan
-    {   
-        background-color: nth($colores, 7);
-        color: white;
+.slogan{   
+        background: linear-gradient(to bottom, #343a40, #495057);
+        border-color: white;
+        
+        color: nth($colores, 5);
         font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 45px;
@@ -15,5 +16,8 @@
         margin: 0px;
     }
 
-
+.slogan-3{
+    padding: 2px;
+    border-color: white;
+    }
 /*Fin seccion 3*/

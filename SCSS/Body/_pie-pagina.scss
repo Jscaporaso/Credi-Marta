@@ -5,21 +5,29 @@
 /*Pie de pagina*/
 
 
-.contacto{
-    color: nth($colores, 7);
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-    li{
+.contact{
+    background: linear-gradient(to bottom, #e9ecef, white);
+
+    .contacto{
+        color: nth($colores, 1);
+        text-align: center;
+        font-size: 10px;
+        text-decoration: none;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        
-        a{
+        ul{
+            color: nth($colores, 1);
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
             text-decoration: none;
+            
+            a{
+                text-decoration: none;
+                color: nth($colores, 1);
+            }
         }
-        }
+    }
 }
 
 footer p
@@ -28,15 +36,15 @@ footer p
     text-align: center;
     font-size: 30px;
     text-decoration-line: underline;
-    margin: 20px;
+    border: 20px;
 }
 
 .segui{
-    background-color: nth($colores, 2);
-}
-.contact{
     background-color: nth($colores, 6);
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
+
 
 footer nav p{
 position: fixed;
@@ -63,9 +71,10 @@ grid-template-rows: auto;
 }
 
 .scale, .contacto img {
-margin: 12px;
-width: $iconos;
-height: $iconos;
+    margin: 12px;
+    width: $iconos;
+    height: $iconos;
+    padding-left: 0px;
     img{
         width: $iconos;
         height: $iconos;
@@ -92,11 +101,42 @@ height: $iconos;
 .twitter{
     @include grilla(5,1)}
 
-.u-userLauncherColor:not([disabled]) {
-        background-color: #a4163f !important;
-        color: #FFFFFF !important;
-        fill: #FFFFFF !important;
-      }
+.ayuda{
+    background-color:  nth($colores, 5);;
+    color:  nth($colores, 6);
+    fill: nth($colores, 6);
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    a{
+        color: white;
+    }
+    img{
+        background-color: nth($colores, 5);
+        height: 30px;
+        width: 30px;
+        }
+    
+}
+.top{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    height: 20px;
+    width: 20px;
+    
+    img{
+        height: 20px;
+        width: 20px;
+        border-radius: 40px;
+    }
+
+}
   
 
 /*fin pie de pagina*/

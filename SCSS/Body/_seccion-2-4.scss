@@ -2,30 +2,37 @@
 
 
 .contenedor{
-    background-color: lightcoral;
+    background: linear-gradient(to bottom, #212529, #343a40);
+    color: white;
     text-align: center;
     font-size: 40px;
     max-width: $ancho;
     p{
         text-align: center;
         justify-content: center;
+        
     }
-}
-
-
-.requisitos-cont{
+    .requisitos-cont{
     display: flex;
     justify-content: center;
-}
-
-.requisitos{
+        .requisitos{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: $ancho;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 12px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        }
+    }
 }
 
+.contenedor-2{
+    background: linear-gradient(to bottom, #495057, #6c757d);
+}
 
 /*Fin seccion 2 y 4*/
